@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jquery-ui": "file:jquery",
+    "slick-carousel": "^1.8.1"
+  }
+}

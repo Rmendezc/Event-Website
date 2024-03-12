@@ -1,0 +1,137 @@
+html{
+    background-color: #FF69B4;
+    font-family: 'Public Sans', sans-serif;
+}
+
+h1, h2 ,h3 , p{
+    color: white;
+}
+header{
+    background-color: #202020;
+    text-decoration: white;
+}
+    
+nav ul{
+    width: 100%;
+    display: inline-block;
+}
+nav li{
+    display: inline-block;
+    margin-right: 0.5em;
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5em;
+    margin: auto;
+}
+nav img{
+    max-width: 80px;
+}
+#logo{
+    text-align: center;
+}
+#logo h2{
+    color: #AA336A;
+}
+.menu{
+    float:inline-end;
+}
+.menu a:hover{
+    background-color:#FF69B4;
+}
+
+#event{
+    background-color:yellow;
+    max-width: fit-content;
+    border-image-width: auto;
+}
+#event img{
+    max-width:1080px;
+    padding-left: 90px;
+}
+#event h2, #event p{
+    color: #202020;
+}
+.single-item {
+    align-items: center;
+    width: 30vw;
+    margin: 0 auto;
+}
+
+#shop{
+    background-color: orange;
+}
+#shop img{
+    max-width: 240px;
+    padding-left: 120px;
+}
+#tickets{
+    background-color: aqua;
+    height: 250px;
+}
+#tickets h2{
+    color: orange;
+}
+#media{
+    background-color: #AA336A;
+    padding-left: 100px;
+}
+.ui-state-active{
+    background-color:aqua;
+    color:aliceblue;
+}
+
+#contact{
+    padding: 1rem 1rem 3rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px;
+    width: 95%;
+    border: 1px limegreen;
+    background-color: blueviolet;
+}
+
+.ui-tabs .ui-tabs-nav{
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor, .ui-state-default{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active{
+    margin: 0.5rem 15%;
+    background:yellowgreen;
+}
+
+.ui-tabs .ui-tabs-nav li{
+    border-radius: 2rem;
+    margin: 0.5rem 15%;
+}
+
+#contact section{
+    padding: 0.5rem;
+}
+#cont{
+    text-decoration: none;
+}
+
+#contact h3{
+    padding: 0;
+    margin-bottom: 0;
+}
+
+footer{
+    background-color: #202020;
+    margin: 0;
+    padding: 5%;
+    text-align:justify;
+    line-height: 20px;
+}
+footer h2{
+    color: #AA336A;
+}
