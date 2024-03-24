@@ -1,137 +1,392 @@
-html{
-    background-color: #FF69B4;
-    font-family: 'Public Sans', sans-serif;
-}
-
-h1, h2 ,h3 , p{
-    color: white;
-}
-header{
-    background-color: #202020;
-    text-decoration: white;
-}
-    
-nav ul{
-    width: 100%;
-    display: inline-block;
-}
-nav li{
-    display: inline-block;
-    margin-right: 0.5em;
-}
-nav a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 0.5em;
-    margin: auto;
-}
-nav img{
-    max-width: 80px;
-}
-#logo{
-    text-align: center;
-}
-#logo h2{
-    color: #AA336A;
-}
-.menu{
-    float:inline-end;
-}
-.menu a:hover{
-    background-color:#FF69B4;
-}
-
-#event{
-    background-color:yellow;
-    max-width: fit-content;
-    border-image-width: auto;
-}
-#event img{
-    max-width:1080px;
-    padding-left: 90px;
-}
-#event h2, #event p{
-    color: #202020;
-}
-.single-item {
-    align-items: center;
-    width: 30vw;
-    margin: 0 auto;
-}
-
-#shop{
-    background-color: orange;
-}
-#shop img{
-    max-width: 240px;
-    padding-left: 120px;
-}
-#tickets{
-    background-color: aqua;
-    height: 250px;
-}
-#tickets h2{
-    color: orange;
-}
-#media{
-    background-color: #AA336A;
-    padding-left: 100px;
-}
-.ui-state-active{
-    background-color:aqua;
-    color:aliceblue;
-}
-
-#contact{
-    padding: 1rem 1rem 3rem 1rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 25px;
-    width: 95%;
-    border: 1px limegreen;
-    background-color: blueviolet;
-}
-
-.ui-tabs .ui-tabs-nav{
-    border-radius: 2rem;
-    padding: 0.5rem;
-}
-
-.ui-tabs .ui-tabs-nav .ui-tabs-anchor, .ui-state-default{
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-.ui-tabs .ui-tabs-nav li.ui-tabs-active{
-    margin: 0.5rem 15%;
-    background:yellowgreen;
-}
-
-.ui-tabs .ui-tabs-nav li{
-    border-radius: 2rem;
-    margin: 0.5rem 15%;
-}
-
-#contact section{
-    padding: 0.5rem;
-}
-#cont{
-    text-decoration: none;
-}
-
-#contact h3{
-    padding: 0;
-    margin-bottom: 0;
-}
-
-footer{
-    background-color: #202020;
+/* Reset default margin and padding */
+* {
     margin: 0;
-    padding: 5%;
-    text-align:justify;
-    line-height: 20px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Public Sans', sans-serif;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav img {
+    height: 50px;
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+  
+  .nav h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem; /* Adjust font size as needed */
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto; /* Push the menu items to the right */
+  }
+  
+  .nav li {
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: orange;
+  }
+  
+  #logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh; /* Adjust as needed */
+  }
+  
+  #logo h2 {
+    margin-bottom: 10px;
+  }
+  
+  #logo img {
+    width: 300px;
+    height: auto;
+  }
+  
+  
+  /* Main content styles */
+  main {
+    padding: 20px;
+    background-color: hotpink;
+  }
+  
+  .poster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .poster img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .poster-details {
+    text-align: center;
+    color: #fff;
+    margin-left: 20px; /* Adjust spacing as needed */
+  }
+  
+  .poster-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: greenyellow;
+  }
+  
+  .poster-details p {
+    margin: 5px 0;
+  }
+  
+  .poster-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .poster-details ul li {
+    margin-bottom: 5px;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .cta-btn:hover {
+    background-color: #ff9800;
+  }
+
+  #shop {
+    padding: 20px 0;
+    background-color: aqua;
 }
-footer h2{
-    color: #AA336A;
+
+.shop-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
+
+.shop-item {
+    text-align: center;
+}
+
+.shop-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.shop-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.shop-item p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #888;
+}
+
+/* Optional: Add hover effects or styles for shop items */
+.shop-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+#media {
+    padding: 20px 0;
+    background-color: #ff9800;
+}
+
+.media-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.media-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.media-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0; /* Rounded corners for top */
+}
+
+.media-item p {
+    padding: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  #tickets {
+    padding: 20px 0;
+}
+
+.ticket-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ff35e4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-actions input[type="submit"],
+.form-actions input[type="button"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-actions input[type="submit"]:hover,
+.form-actions input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+#ticketDisplay {
+    margin-top: 20px;
+}
+#displayE{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fffb1b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+.contact {
+    background-color: #4aff32;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  #cont {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  #cont li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  #cont li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  #cont li a:hover {
+    color: limegreen; /* Change to your desired hover color */
+  }
+  
+  #tab1,
+  #tab2,
+  #tab3 {
+    display: none;
+  }
+  
+  #tab1 p,
+  #tab2 p,
+  #tab3 p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Show the corresponding div when a tab is clicked */
+  #cont li a.active {
+    color: limegreen; /* Change to your desired active color */
+  }
+  
+  #tab1:target,
+  #tab2:target,
+  #tab3:target {
+    display: block;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  footer img{
+    width: 300px;
+    height: auto;
+  }
+
+  footer h2 {
+    color: purple;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      align-items: flex-start;
+      display: block;
+      text-align: center;
+    }
+  
+    .nav ul {
+      margin-top: 10px;
+      display: list-item;
+      text-align: center;
+    }
+  
+    .nav li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .poster{
+        display: list-item;
+    }
+  }
